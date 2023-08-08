@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+h5 {
+    margin:10px;
+}
+
+.ExercisesBox {
+    /*gap: 20px;*/
+    /*max-height: 100vh;*/
+    /*margin-right: 100vh;*/
+    /*margin-left: 70px;*/
+}
+
+.ExercisesBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 100vh;
+    /*margin: 0;*/
+    overflow: auto;
+}
+
+.ExercisesBox > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    /*padding: 40px;*/
+}
+
+.ExercisesBox > button {
+    background-color: #ffffff;
+    border: none;
+    color: #7a4f5d;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    /*padding: 10px 20px;*/
+    margin-top: 15px;
+    cursor: pointer;
+    /*margin-left: 30px;*/
+    width: 40px;
+}
+
+.detailStack {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.extraDetail {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.detailButton {
+    background: #eee;
+    border: none;
+    color: #333;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.detailText {
+    color: #f9536a;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    /* text-transform: capitalize; */
+}
+
+.exerciseName {
+    color: #333;
+    text-align: center;
+    margin-bottom: 16px;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 5px;
+    display: grid;
+    justify-items: center;
+    width: 50%;
+    padding: 30px;
+}
+
+a {
+    color: #7a4f5d;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 30px;
+    color: #7a4f5d;
+    letter-spacing: 10px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 20px;
+    align-content: center;
+    display: flex;
+}
+
+.buttonBox {
+    display: flex;
+    height: 3em;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .ExercisesBox {
+        gap: 10px;
+        max-height: 100vh;
+        margin: 0 10px;
+    }
+
+    .ExercisesBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .ExercisesBox > div {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .ExercisesBox > button {
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 10px;
+        letter-spacing: 5px;
+        margin: 0;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .ExercisesBox {
+        margin-left: 70px;
+        margin-right: 0;
+    }
+
+    .ExercisesBox > div {
+        flex-direction: row;
+        padding: 40px;
+    }
+
+    .ExercisesBox > button {
+        margin-left: 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+        letter-spacing: 10px;
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+
+    .modal-content {
+        width: 50%;
+        padding: 30px;
+    }
+}
+

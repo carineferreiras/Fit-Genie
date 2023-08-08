@@ -1,0 +1,101 @@
+.detailStack {
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+}
+
+.detailImage {
+    width: 100%;
+    height: auto;
+}
+
+.innerDetailStack {
+    gap: 35px;
+    height: 100% !important;
+}
+
+.exerciseName {
+    text-transform: capitalize;
+}
+
+.exerciseDescription {
+    margin-bottom: 20px;
+}
+
+.extraDetail {
+    display: flex;
+    flex-direction: column;
+}
+
+.extraDetailStack {
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    justify-content: space-between !important;
+}
+
+.detailButton {
+    background: #fff2db;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.detailIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.detailText {
+    text-transform: capitalize;
+}
+
+/*  //////////////////////////////////////////////////////////////////////// */
+
+
+/* Mobile Phones (small devices) */
+@media (max-width: 767px) {
+    .detailStack {
+        flex-direction: column;
+    }
+
+    .detailImage {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .exerciseName, .detailText {
+        font-size: 16px;
+    }
+    
+    .detailButton {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .detailIcon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* iPads/Tablets (medium devices) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .detailImage {
+        max-width: 70%;
+    }
+
+    .exerciseName, .detailText {
+        font-size: 18px;
+    }
+
+    .detailButton {
+        width: 80px;
+        height: 80px;
+    }
+
+    .detailIcon {
+        width: 45px;
+        height: 45px;
+    }
+}

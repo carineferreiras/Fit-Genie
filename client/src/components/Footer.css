@@ -1,0 +1,17 @@
+.footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ffe6e8;
+}
+
+.footerStack {
+    gap: 40px;
+    align-items: center;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+.footerText {
+    padding-bottom: 20px;
+}
+/*  //////////////////////////////////////////////////////////////////////// */

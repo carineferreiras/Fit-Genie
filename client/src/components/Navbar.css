@@ -1,0 +1,107 @@
+.navbarStack {
+    display: flex;
+    flex-direction: column;
+    /*position: fixed;*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 20vw;
+    /*top: 0;*/
+    /*left: 0;*/
+    padding: 10px;
+    background-color: #f1f1f1;
+    overflow: auto;
+    /*margin-top: auto;*/
+}
+
+.logoLink {
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.logoImage {
+    width: 110px;
+    height: 110px;
+}
+
+.navbarLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 15px;
+    margin-top: 20px;
+    color: #7a4f5d;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: uppercase;
+}
+.exercisesAdminLink {
+    font-size: 11px;
+}
+
+.homeLink, .exercisesLink, .emptyLink {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 15px;
+    margin-top: 20px;
+    color: #7a4f5d;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.homeLink, .exercisesLink, .emptyLink ::shadow {
+    /*
+        color: #FF2625;
+
+        */
+}
+
+button .navbarLinks {
+    text-decoration: none;
+    color: #7a4f5d;
+}
+
+/*  //////////////////////////////////////////////////////////////////////// */
+
+/* Mobile Phones (small devices) */
+@media (max-width: 767px) {
+    .navbarStack {
+        width: 90px; /* Adjusted width for mobile */
+        padding: 5px;
+    }
+
+    .logoImage {
+        width: 70px;
+        height: 70px;
+    }
+
+    .navbarLinks, .homeLink, .exercisesLink, .emptyLink {
+        font-size: 13px; /* Adjusted font size */
+        gap: 20px;
+        margin-top: 15px;
+    }
+}
+
+/* iPads/Tablets (medium devices) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbarStack {
+        width: 170px; /* Adjusted width for tablets */
+        padding: 8px;
+    }
+
+    .logoImage {
+        width: 100px;
+        height: 100px;
+    }
+
+    .navbarLinks, .homeLink, .exercisesLink, .emptyLink {
+        font-size: 19px; /* Adjusted font size */
+        gap: 30px;
+        margin-top: 18px;
+    }
+}

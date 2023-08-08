@@ -1,0 +1,49 @@
+
+.navbarLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.homeLink, .exercisesLink, .emptyLink {
+    text-decoration: none;
+    color: #3A1212;
+}
+
+.logoutbutton {
+    background: #eee;
+    border: none;
+    color: #333;
+
+}
+
+/*  //////////////////////////////////////////////////////////////////////// */
+
+
+/* Mobile Phones (small devices) */
+@media (max-width: 767px) {
+    .navbarLinks {
+        gap: 20px; /* Reducing gap for mobile */
+        font-size: 18px; /* Adjusting font size */
+        margin-top: 10px;
+    }
+
+    .homeLink, .exercisesLink, .emptyLink {
+        font-size: 18px; /* Adjusting font size */
+    }
+}
+
+/* iPads/Tablets (medium devices) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbarLinks {
+        gap: 30px; /* Moderate gap for tablets */
+        font-size: 22px; /* Adjusting font size */
+        margin-top: 15px;
+    }
+
+    .homeLink, .exercisesLink, .emptyLink {
+        font-size: 22px; /* Adjusting font size */
+    }
+}

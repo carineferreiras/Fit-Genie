@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  
+  
+}
+
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+.signUpBox, .signInBox {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  width: 400px;
+  margin: 30px;
+  margin-left:  600px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+ 
+}
+
+.signUpField, .signInField {
+  width: 100%;
+  margin-bottom: 30px;
+ 
+}
+
+.signUpButton, .signInButton {
+  width: 100%;
+  margin-top: 40px;
+ 
+}
+/*  //////////////////////////////////////////////////////////////////////// */
+
+/* Mobile Phones (small devices) */
+@media (max-width: 767px) {
+  body {
+    flex-direction: column;
+    margin-left: 45px;
+    width: 100%;
+  }
+
+  .signUpBox, .signInBox {
+      width: 90%; 
+      margin-left: auto; 
+      margin-right: auto; 
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+  
+  .signUpField, .signInField {
+      margin-bottom: 20px; 
+  }
+  
+  .signUpButton, .signInButton {
+      margin-top: 20px; /* reduce margin for smaller screens */
+  }
+}
+
+/* iPads/Tablets (medium devices) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .signUpBox, .signInBox {
+      width: 70%; /* use a bit more of the screen's width, but not as much as mobile */
+      margin-left: auto;
+      margin-right: auto;
+  }
+}

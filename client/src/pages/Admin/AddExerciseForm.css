@@ -1,0 +1,110 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    width: 80%;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    color: #7a4f5d;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    align-content: center;
+}
+
+input {
+    margin-left: 20px;
+}
+
+button {
+
+    background-color: #ffffff;
+    border: none;
+    color: #7a4f5d;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    margin-left: 30px;
+    text-transform: uppercase;
+    width: 80%;
+}
+
+.buttonInput {
+
+    background-color: #ffffff;
+    border: none;
+    color: #7a4f5d;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    margin-left: 30px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.inputLabel {
+
+    background-color: #ffffff;
+    border: none;
+    color: #7a4f5d;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-left: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+/*  //////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 767px) {
+    form {
+        padding: 10px;
+    }
+
+    label {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    input, .inputLabel, button, .buttonInput {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .inputLabel, .buttonInput {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    form {
+        padding: 15px;
+    }
+
+    label {
+        padding: 15px;
+    }
+
+    input, .inputLabel, button, .buttonInput {
+        width: 90%;
+    }
+
+    .inputLabel, .buttonInput {
+        margin-bottom: 10px;
+    }
+}

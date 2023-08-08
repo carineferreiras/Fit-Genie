@@ -1,0 +1,116 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.WorkoutsBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background: #f1f1f1;
+    /*padding:20px;*/
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /*margin: 10px auto;*/
+    max-height: 100vh;
+    overflow-y: auto;
+    /*margin-left: 110px;*/
+    /*margin-top: 20px;*/
+    /*margin-bottom: 20px;*/
+    /*padding-bottom: 30px;*/
+}
+
+.innerDetailStack {
+    gap: 35px;
+    height: 100% !important;
+}
+
+button {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.WorkoutsBox > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.detailStack {
+    background: #f8f8f8;
+    /*padding: 10px;*/
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.extraDetail {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.detailButton {
+    background: #eee;
+    border: none;
+    color: #333;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.detailText {
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    /* text-transform: capitalize; */
+}
+
+.exerciseName {
+    color: #333;
+    text-align: center;
+    margin-bottom: 16px;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+
+/*  //////////////////////////////////////////////////////////////////////// */
+
+/* Mobile Phones (small devices) */
+@media (max-width: 767px) {
+    .WorkoutsBox {
+        grid-template-columns: 1fr; /* single column for mobile */
+        margin-left: 10px;
+        width: 100%;
+    }
+
+    .exerciseName {
+        font-size: 18px; /* slightly reduce for mobile */
+    }
+
+    .detailText, .extraDetail {
+        font-size: 12px; /* slightly reduce for mobile */
+    }
+}
+
+/* iPads/Tablets (medium devices) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .WorkoutsBox {
+        grid-template-columns: repeat(2, 1fr); /* two columns for tablets */
+    }
+}

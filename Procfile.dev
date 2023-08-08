@@ -1,0 +1,4 @@
+web : PORT=4O00 npm start --prefix client
+api: PORT=3000 rails s
+
+foreman start -f Procfile.dev
